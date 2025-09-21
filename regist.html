@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: rgb(200,200,200);
+        }
+        main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: rgb(142, 202, 230);
+            display: flex;
+            flex-direction: column;
+            gap:.5rem;
+        }
+        input{
+            padding: .5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        [type=button] {
+            box-shadow: 2px 2px 5px #000;
+            background-color: rgb(174, 175, 175);
+            cursor: pointer;
+            margin:1rem 0 0 0;
+        }
+        [type=button]:hover{
+            background-color: rgb(115, 116, 116);
+            color:#ffffff;
+        }
+        [type=button]:active{
+            scale: 0.98;
+        }
+        .exit{
+            font-size: 2rem;
+            display: flex;
+            justify-content: right;
+        }
+        .exit a{
+            text-decoration: none;
+            color: #000;
+        }
+        .exit h3{
+            margin: -0.5rem;
+            cursor: pointer;
+            width: 2rem;
+        }
+        .exit a:hover{
+            color: rgb(255,0,0);
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form action="./index.html" method="GET">
+            <div class="exit">
+                <h3><a href="./index.html">&#215;</a></h3>
+            </div>
+            <label for="name">Felhasználónév</label>
+            <input type="text" name="" id="name" value="" placeholder="Username" maxlength="">
+            <label for="email">E-mail cím</label>
+            <input type="text" name="email" id="email" placeholder="example@mail.ext">
+            <label for="passwd">Jelszó</label>
+            <input type="password" name="password" id="passwd" minlength="8">
+            <!-- <input type="submit" value="Regisztráció"> -->
+            <input type="button" value="Regisztráció">
+        </form>
+    </main>
+</body>
+</html>
